@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Collection Project</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Data Collection Project</h1>
+        </header>
+        <main>
+            <section id="input-form">
+                <h2>Enter Data</h2>
+                <form id="data-form">
+                    <label for="field1">Field 1:</label>
+                    <input type="text" id="field1" name="field1" required>
+                    <label for="field2">Field 2:</label>
+                    <input type="text" id="field2" name="field2" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section id="data-table">
+                <h2>Data Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field 1</th>
+                            <th>Field 2</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody><!-- Data rows will be appended here --></tbody>
+                </table>
+                <button id="calculate-average">Calculate Average</button>
+                <button id="print-view">Print View</button>
+            </section>
+        </main>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
