@@ -1,0 +1,56 @@
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the main heading */
+h1 {
+    margin: 20px 0;
+}
+
+/* Styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styles for form labels */
+form label {
+    margin: 5px 0;
+}
+
+/* Styles for form inputs and button */
+form input, form button {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+/* Styles for the table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+/* Border styles for table, table headers, and table cells */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Padding and text alignment for table headers and cells */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Print view: hide form elements */
+@media print {
+    form {
+        display: none;
+    }
+}
