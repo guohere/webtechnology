@@ -1,0 +1,94 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #138ecb;
+}
+
+/* Container for the content */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Logo styles */
+/* .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+} */
+
+/* Heading styles */
+h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Input, select, and button styles */
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header and cell styles */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Center align table headers */
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Initial state of the data and average sections */
+#data-section, #average-section {
+    display: none;
+}

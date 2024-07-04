@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Tracker</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add the logo image here -->
+        <img src="images/OTHiconimages.png" alt="OTH Amberg Weiden Logo" class="logo">
+        
+        <h2>Student Course Tracker</h2>
+
+        <!-- Section for adding new courses -->
+        <section id="course-section">
+
+            <!-- Table to show existing courses -->
+            <h3>Existing Courses</h3>
+            <table id="existingCoursesTable">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            
+            <h3>Add New Course</h3>
+            <form id="courseForm">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName" required>
+                <button type="submit">Add Course</button>
+            </form>
+
+            
+        </section>
+
+        <!-- Section for adding student course data -->
+        <section id="student-section">
+            <h3>Add Course Data</h3>
+            <form id="studentForm">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" required>
+                
+                <label for="courses">Courses:</label>
+                <!-- Dropdown for selecting courses -->
+                <select id="courses" name="courses"></select>
+                
+                <label for="examResult">Exam Result:</label>
+                <!-- Input for entering the exam result -->
+                <input type="number" id="examResult" name="examResult" required>
+                
+                <!-- Button to add the course to the student data -->
+                <button type="button" onclick="addCourseToStudent()">Add Course</button>
+            </form>
+        </section>
+
+        <!-- Section for displaying student course data -->
+        <section id="data-section">
+            <h3>Course Data</h3>
+            <table id="studentCourseTable">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Exam Result</th>
+                        <th>Semester</th>
+                        <th>Actions</th> <!-- Column for delete button -->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Section for displaying average results -->
+        <section id="average-section">
+            <h3>Average Results</h3>
+            <table id="averageTable">
+                <thead>
+                    <tr>
+                        <th>Number of Courses</th>
+                        <th>Average Result</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Button to toggle the visibility of tables -->
+        <button id="toggleButton">Show Tables</button>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
